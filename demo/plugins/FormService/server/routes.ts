@@ -13,5 +13,7 @@ export class Router implements IRouter {
     app.post('/update', validator.validateUpdateAPI, (req, res) => { server.update(req, res) });
     app.post('/create', validator.validateCreateAPI, (req, res) => { server.create(req, res) });
     app.post('/list', (req, res) => { server.listAll(req, res) });
+    app.post('/retire', validator.validateReadAPI, (req, res) => { server.retire(req, res) });
+    app.post('/restore', validator.validateReadAPI, (req, res) => { server.restore(req, res) });
 	}
 }

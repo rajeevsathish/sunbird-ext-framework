@@ -1,3 +1,4 @@
+
 {
   "type": "cassandra",
   "config": {
@@ -38,9 +39,20 @@
         },
         "last_modified_on": {
           "type": "timestamp"
+        },
+        "isretired": {
+          "type": "varchar"
+        },
+        "version": {
+          "type": "varchar",
+          "default": "v1"
+        },
+        "vesionhistory":{
+          "type": "varchar"
         }
+
       },
-      "key": [ ["root_org", "framework", "type", "subtype", "action", "component"] ]
+      "key": [ ["root_org", "framework", "type", "subtype", "action", "component", "version"] ]
     }
   ]
 }
