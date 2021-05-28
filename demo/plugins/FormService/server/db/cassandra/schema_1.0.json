@@ -52,7 +52,7 @@
         }
 
       },
-      "key": [ ["root_org", "framework", "type", "subtype", "action", "component", "version"] ]
+      "key": [ ["root_org", "framework", "type", "subtype", "action", "component", "version", "isretired"] ]
     }
   ]
 }
